@@ -1,6 +1,9 @@
 <html>
 <head>
     <style type="text/css">
+    
+        @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+    
         body{background-image: url(http://www.wickes.co.uk/content/ebiz/wickes/invt/195462/Paintable-Wallpaper-Linear-Texture_large.jpg);
               background-repeat: repeat;
               background-attachment: fixed;
@@ -31,6 +34,10 @@
         
         .grid_7{
             width: 560px;
+            }
+            
+        .grid_8{
+            width:640px;
             }
         
         .intro{
@@ -77,8 +84,19 @@
             font-family:"Courier New", Courier, monospace;
             font-size: 2em;
             font-weight: 500;
-            }    
-            
+            }
+                         
+        #photo {
+            float:right;
+            margin-top:100px;
+            margin-right:50px;
+	        border:solid 2px #000;
+	        padding:5px;
+	        width:250px;
+	        box-sizing:border-box;
+            }
+  
+              
         dl{            
             background: #FFFFFF;
             border-top-left-radius: 20px;
@@ -108,6 +126,8 @@
             margin-left:50px;
             margin-right:50px;
             }
+            
+  
 
     </style>
 </head>
@@ -117,7 +137,7 @@
 <header>YenMingLiao's Profile</header>
 
         <div class="intro">
-        Hello, my name is Yen Ming Liao(廖彥銘). Welcome to my page. You can look around of my personal introdution below. Enjoying browsing.
+        Hello, my name is Yen Ming Liao. Welcome to my page. You can look around of my personal introdution below. Enjoying browsing.
     </div>
 
     
@@ -130,9 +150,10 @@
             <li id="nav4"><a href="https://www.facebook.com/yenming.liao">Facebook</a></li>
     	</ul>
     </nav>
-    
-
-    <dl><br>
+  
+    <img src="http://25.media.tumblr.com/b15bbe053328a7861684febbb2227b5f/tumblr_mkblmaeKO41s6aak7o2_500.jpg" id="photo" class="grid_5"/>
+  
+    <dl class="grid_8"><br>
         <dt id="education">Education</dt>
     	<dd>
     		<ul class="edu">
@@ -200,15 +221,9 @@
     </dl>
 </section>
     
-    
-    
     <footer>
         <p>By Yen-Ming Liao  Web Programming 2013 Spring</p>
     </footer>
-    
-    
-    
-    
-    
+
 </body>
 </html>
