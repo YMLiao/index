@@ -13,7 +13,7 @@
             margin-top:30px;
             background: url(http://25.media.tumblr.com/e2defe3c9858c96f2c4316db3a427155/tumblr_mka4tbFEnR1s6aak7o1_500.jpg);
             height:150px;
-	        text-indent:-9999px;
+            text-indent:-9999px;
             background-repeat: no-repeat;      
         }
                 
@@ -146,9 +146,9 @@
     <nav>
         <ul>
             <li class="home"><a href="http://ymliao.github.com/index">Home</a></li>
-            <li id="form"><a href="http://ymliao.github.com/index/form/form">Form</a></li>
-            <li id="nccu"><a href="http://www.nccu.edu.tw">NCCU</a></li>
-            <li id="fb"><a href="https://www.facebook.com/yenming.liao">Facebook</a></li>
+            <li id="form"><a href="http://ymliao.github.com/index/form/form/">Form</a></li>
+            <li id="nav3"><a href="http://www.nccu.edu.tw/">NCCU</a></li>
+            <li id="nav4"><a href="https://www.facebook.com/yenming.liao">Facebook</a></li>
     	</ul>
     </nav>
   
@@ -161,34 +161,43 @@
     <input type="hidden" name="entry.0.single" value="your_id">
     <label>
         Name: <br>
-        <input type="text" name="entry.0.single" size="30" value="EX: Yen Ming Liao">
+        <input type="text" name="entry.1.single" size="30" value="EX: Yen Ming Liao">
     </label>
     <br><br>
+    
+        <label>
+        Gender: <br>
+        <input type="radio" name="entry.1.group" value="maleboy" id="gender1"><label for="gender1">Boy</label><br>
+        <input type="radio" name="entry.1.group" value="femalegirl" id="gender2"><label for="gender2">Girl</label><br/><br>
+    
+        Favorite Foods: <br>
+        <input type="radio" name="entry.2.group" value="apple" id="food1"><label for="food1">Apple</label><br>
+        <input type="radio" name="entry.2.group" value="Banana" id="food2"><label for="food2">Banana</label><br>
+        <input type="radio" name="entry.2.group" value="Lemon" id="food3"><label for="food3">Lemon</label><br>
+        <input type="radio" name="entry.2.group" value="senior" id="food4"><label for="food4">Watermelon</label><br><br>
+
+
+
     <label>
-        Email:<br>
+        Relationship<br/>
+        <select name="entry.3.single" id="entry_3">
+            <option value="single">Single</option>
+            <option value="dating">Dating</option>
+            <option value="married">Married</option>
+            <option value="hard">Hard to Explain</option>
+    </label><br><br>
+   
+   <br><label>
+        Mail: <br>
         <input type="email" name="entry.4.single" size="30" value="EX: XXX@gamil.com">
     </label>
     <br><br>
-    <label>
-        Gender: <br>
-        <input type="radio" name="entry.1.group" value="maleboy" id="gender1"><label for="gender1">Male/Boy</label><br>
-        <input type="radio" name="entry.1.group" value="femalegirl" id="gender2"><label for="gender2">Female/Girl</label><br/><br>
-    <label>
-        Grade: <br>
-        <input type="radio" name="entry.2.group" value="freshman" id="grade1"><label for="grade1">Freshman</label><br>
-        <input type="radio" name="entry.2.group" value="sophomore" id="grade2"><label for="grade2">Sophomore</label><br>
-        <input type="radio" name="entry.2.group" value="junior" id="grade3"><label for="grade3">Junior</label><br>
-        <input type="radio" name="entry.2.group" value="senior" id="grade4"><label for="grade4">Senior</label><br>
-        <input type="radio" name="entry.2.group" value="other" id="grade5"><label for="grade5">Other</label><br><br>
 
     <label>
-        Favorite Convenient Store<br/>
-        <select name="entry.3.single" id="entry_3">
-            <option value="7-11">7-11</option>
-            <option value="Family Mart">Family Mart</option>
-            <option value="Hi-life">Hi-life</option>
-            <option value="OK">OK</option>
-            <option value="Other">Other</option>
+
+    <label>
+        Comments<br/>
+        <textarea name="entry.5.single" cols="30" rows="5"></textarea>
     </label><br>
     
         <input type="submit" value="Submit" name="submit">
